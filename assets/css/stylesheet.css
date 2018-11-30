@@ -32,7 +32,6 @@ div.elem>a>img {
     opacity: 0.7;
 }
 
-
 .video {
     width: 100%;
 }
@@ -47,8 +46,13 @@ h3 {
 
 
 .heading,
-h3 #hi {
+h3,
+#hi {
     font-weight: 700;
+}
+
+p.h5 {
+    font-size: 0.8rem;
 }
 
 .elem {
@@ -85,6 +89,19 @@ div>.website {
 div+img.myImg.img-fluid {
     display: flex;
 }
+
+.icon {
+    width: 20px;
+    height: 20px;
+    max-width: 50px;
+    max-height: 50px;
+    vertical-align: middle;
+}
+
+/* .contact-details{
+    font-size: 0.8rem;
+} */
+
 
 /* Style the Image Used to Trigger the Modal */
 #myImg {
@@ -183,6 +200,19 @@ div+img.myImg.img-fluid {
     .video {
         height: 230px;
     }
+
+    #me {
+        width: 200px;
+    }
+
+    .icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    p.h5 {
+        font-size: 0.8rem;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -200,6 +230,16 @@ div+img.myImg.img-fluid {
     p {
         font-size: 0.8rem;
     }
+
+    #me {
+        width: 300px;
+
+    }
+
+    p.h5 {
+        font-size: 1rem;
+    }
+
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -221,12 +261,31 @@ div+img.myImg.img-fluid {
     .modal-content {
         width: 100%;
     }
+
+    #me {
+        width: 300px;
+    }
+
+    .icon {
+        width: 40px;
+        height: 40px;
+    }
+
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     .video {
         height: 350px;
+    }
+
+    #me {
+        min-width: 10%;
+    }
+
+    .icon {
+        width: 50px;
+        height: 50px;
     }
 }
 

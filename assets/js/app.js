@@ -21,20 +21,12 @@ $(".close").click(function() {
 });
 
 //Logo rotation
-
-// $(window).scroll(function () {
-//     var bodyHeight = $("body").height() - $(window).height();
-//     $('#logo').css({
-//         transform: 'rotate(' + window.pageYOffse + 'deg)'
-//     });
-// });
-
 $(document).ready(function () {
     var bodyHeight = $("body").height() - $(window).height();
     window.onscroll = function () {
 
-        //Determine the amount to rotate by.
-        var deg = -window.scrollY * (360 / bodyHeight);
+        //Determine the amount to rotate by
+        var deg = -window.scrollY * (360 / bodyHeight)/4000;
 
         $("#logo").css({
             "transform": "rotate(" + deg + "deg)",
