@@ -40,7 +40,7 @@
 
   <nav class="navbar navbar-expand-md navbar-dark fixed-top">
     <a class="navbar-brand align-middle" href="/index.html">
-      <img class="mr-3" src="img/nav-logo.png">
+      <img class="mr-3" id="logo" src="img/nav-logo.png">
       <span class="d-none d-md-inline">Dragos Popa</span>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -102,71 +102,182 @@
     </ul>
     <div class="elem">
 
-      <h3>RGB Color guessing game</h3>
-      <iframe src="frame/RGB guessing game/guessRgb.html"> </iframe>
+      <h3 class="text-center">RGB Color guessing game</h3>
+      <iframe class="website" src="frame/RGB guessing game/guessRgb.html"> </iframe>
     </div>
     <div class="elem">
-      <h3>To-do application</h3>
-      <iframe src="frame/To-do/index.html"></iframe>
+      <h3 class="text-center">To-do application</h3>
+      <iframe class="website" src="frame/To-do/index.html"></iframe>
     </div>
     <div class="elem">
-      <h3>Soundboard application</h3>
+      <h3 class="text-center">Soundboard application</h3>
       <p>Static soundboard application which allows the user to make sounds using different keys. Each keystroke has
-        a different sound and colour along with interactive animations.</p>
+        a different sound and colour along with interactive animations. Just click on the black square and press a
+        letter!</p>
     </div>
     <div class="elem">
-      <iframe src="frame/soundboard/index.html"></iframe>
+      <iframe class="website" src="frame/soundboard/index.html"></iframe>
     </div>
     <div class="elem">
-      <h3>Museum of Candy</h3>
+      <h3 class="text-center">Museum of Candy</h3>
       <p>See the full version here: <a href="https://dxp611.github.io/museum-of-candy/" target="_blank">Museum of Candy</a></p>
-      <iframe src="frame/museum-of-candy/index.html"></iframe>
+      <iframe class="website" src="frame/museum-of-candy/index.html"></iframe>
     </div>
 
     <div class="elem pt-5">
-      <h3>YelpCamp</h3>
-      <p class="">I also learned the basics of <strong>back-end</strong> development: working with <strong>Node.js</strong>
-        files,
-        <strong>npm</strong>
-        package manager,server side frameworks such as <strong>Express.js</strong>, using <strong>mongoDB and mongoose,
-          passport</strong>, and making use of <strong>RESTful Routing</strong>.</p>
-      <p>At the end of the course I created a dynamic application called <strong><a href="https://safe-thicket-71260.herokuapp.com/"
-            target="_blank">YelpCamp</a>
-        </strong> which incorporates everything
-        mentioned above. The application
-        allows users to Signup and Login (using passport), add campgrounds, and comment on other campgrounds. Deployed
-        the application using <strong>Heroku and mLab.</strong></p>
-      <a href="https://safe-thicket-71260.herokuapp.com/" target="_blank"><img src="img/yelpcamp.png"></a>
+      <h3 class="text-center">YelpCamp</h3>
+
+      <div class="row">
+        <div class="col-lg-6">
+          <p class="">I also learned the basics of <strong>back-end</strong> development: working with <strong>Node.js</strong>
+            files,
+            <strong>npm</strong>
+            package manager,server side frameworks such as <strong>Express.js</strong>, using <strong>mongoDB and
+              mongoose,
+              passport</strong>, and making use of <strong>RESTful Routing</strong>.</p>
+          <p>At the end of the course I created a dynamic application called <strong><a href="https://safe-thicket-71260.herokuapp.com/"
+                target="_blank">YelpCamp</a>
+            </strong> which incorporates everything
+            mentioned above. The application
+            allows users to Signup and Login (using passport), add campgrounds, and comment on other campgrounds.
+            Deployed
+            the application using <strong>Heroku and mLab.</strong></p>
+        </div>
+        <div class="col-lg-6">
+          <div class="container">
+            <a class="hover" href="https://safe-thicket-71260.herokuapp.com/" target="_blank">
+              <img class="img-fluid" src="img/yelpcamp.jpg">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="elem pt-5">
+      <h3 class="text-center">This website was made entirely with everything I learned from the course mentioned above</h3>
     </div>
   </section>
 
   <section class="content">
     <h2 class="text-center heading mb-4">Coding and Design Skills</h2>
     <hr>
-<img class="logo rounded mx-auto d-block mx-auto py-2" src="img/logo.png" max-width="291px">
+    <img class="mx-auto d-block img-fluid py-5" src="img/logo.png">
 
     <p>Working in a team of 6 people we created a game which received the <strong>IBM prize</strong> (out of 25 teams)
       in a
       competition organised by our University, as part of a module. This was a challenge in both designing and coding
-      skills.</p>
-    <p><a href="https://github.com/dxp611/polymorphous-game" target="_blank">See our code on Git!</a></p>
+      skills. <a href="https://github.com/dxp611/polymorphous-game" target="_blank">See our code on Git!</a></p>
+
     <p>The game is based on the idea of the classic
       <a href="https://en.wikipedia.org/wiki/Bomberman">Bomberman</a>,
       but in
       an isometric style. The idea behind the name "Polymorphous" is that inside the game you can choose from 3
       individual
-      maps and 12 characters, mix them up and make the game your own. The idea of the game is based on achievements and
-      is
-      a play to unlock style of game.</p>
+      maps and 12 characters, mix them up and make the game your own. Through playing you unlock multiple characters
+      and different maps, which makes the game more desirable to play.</p>
+    <p>The game has a random map generator, multiplayer capabilities and an AI which you could play against in single
+      player
+      mode.</p>
     <p>All the artwork was created by me, from scratch, for this game. Having experience as a graphic designer, helped
       me
       into getting into the mindset of designing arwork for the first time. The isometric perspective was a huge
       challenge.
       I started by working on a grid, developing the map and then adding the details like so: </p>
+
+    <div class="row elem">
+      <div class="col-sm-4 my-2"><img class="myImg img-fluid" src="img/game-theme1.gif"></div>
+      <div class="col-sm-4 my-2"><img class="myImg img-fluid" src="img/game-theme2.gif"></div>
+      <div class="col-sm-4 my-2"><img class="myImg img-fluid" src="img/game-theme3.gif"></div>
+    </div>
+    <p class="pt-2">There are three themes inside the game, each of them with their own atmosphere and specific music.
+    </p>
+    <div class="row elem">
+      <div class="col-sm-4 my-2"><img class="myImg img-fluid" src="img/game-theme1.png"></div>
+      <div class="col-sm-4 my-2"><img class="myImg img-fluid" src="img/game-theme2.png"></div>
+      <div class="col-sm-4 my-2"><img class="myImg img-fluid" src="img/game-theme3.png"></div>
+    </div>
+    <div class="row elem">
+      <div class="col-xl-6">
+        <p class="pt-2">There are 12 characters in the game, each of which have 12 positions. This means that there
+          were 144
+          positions for all characters.</p>
+        <img class="myImg img-fluid" src="img/game-chars.png" width="100%">
+
+      </div>
+      <div class="col-xl-6">
+        <p> Here is a video to demo the game:</p>
+        <iframe class="mx-auto d-block video" src="https://www.youtube.com/embed/biMmRFgScSY" frameborder="0" allow="autoplay; encrypted-media"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+    <p class="my-4">Coding the game was a real challenge in terms of making it Object Oriented, drawing the actual
+      artwork on
+      screen, creating the collision mechanics in an isometric perspective. The game had a randomly generated map and
+      an AI
+      which you could play
+      against in
+      Single Player mode. Networking was a big issue as well, as we allowed up to 4 players in a lobby. <a href="https://github.com/dxp611/polymorphous-game"
+        target="_blank">See our code on Git!</a></p>
+
+    <h3>Posters</h3>
+    <div class="row">
+      <div class="col-md-4 elem"><img class="myImg img-fluid" src="img/A4-societies.png"></div>
+      <div class="col-md-4 elem"><img class="myImg img-fluid" src="img/A4-ValeFireworks.png"></div>
+      <div class="col-md-4 elem"><img class="myImg img-fluid" src="img/A4-intWel.png"></div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 elem"><img class="myImg img-fluid" src="img/A4-Christmas.png"></div>
+      <div class="col-md-4 elem "><img class="myImg img-fluid" src="img/A4-Christmas2.png"></div>
+      <div class="col-md-4 elem"><img class="myImg img-fluid" src="img/A4-GIAG.png"></div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 elem"><img class="myImg img-fluid" src="img/A4-Oneworld.png"></div>
+      <div class="col-md-4 elem"><img class="myImg img-fluid" src="img/A4-GBlunch.png"></div>
+      <div class="col-md-4 elem"><img class="myImg img-fluid" src="img/A4-Global-Buddies.png"></div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 elem"><img class="myImg img-fluid" src="img/A4-dropin.png"></div>
+      <div class="col-md-4 elem"><img class="myImg img-fluid" src="img/A4-easter.png"></div>
+      <div class="col-md-4 elem"><img class="myImg img-fluid" src="img/A4-ggw.png"></div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 elem"><img class="myImg img-fluid" src="img/A4-Svw.png"></div>
+      <div class="col-md-4 elem"><img class="myImg img-fluid" src="img/A4-sms.png"></div>
+      <div class="col-md-4 elem"><img class="myImg img-fluid" src="img/A4-volsurvey.png"></div>
+    </div>
+    <h3>Web banners</h3>
+    <div class="row">
+      <div class="col-md-6  elem"><img class="myImg img-fluid" src="img/sw3.png"></div>
+      <div class="col-md-6  elem"><img class="myImg img-fluid" src="img/sw2.png"></div>
+    </div>
+    <div class="row">
+      <div class="col-md-6  elem"><img class="myImg img-fluid" src="img/S-mtad.png"></div>
+      <div class="col-md-6  elem"><img class="myImg img-fluid" src="img/F-voter-reg.png"></div>
+    </div>
+    <div class="row">
+      <div class="col-md-6  elem"><img class="myImg img-fluid" src="img/F-easter.png"></div>
+      <div class="col-md-6  elem"><img class="myImg img-fluid" src="img/F-stpatricks.png"></div>
+    </div>
+    <div class="row">
+      <div class="col-md-6  elem"><img class="myImg img-fluid" src="img/F-VCQT.png"></div>
+      <div class="col-md-6  elem"><img class="myImg img-fluid" src="img/F-jinglebelljam.png"></div>
+    </div>
+    <!-- <h3>Other designs</h3>
+    <div class="row">
+      <div class="col-md-6 elem"><img class="myImg img-fluid" src="img/A-level.png"></div>
+      <div class="col-md-6 elem"><img class="myImg img-fluid" src="img/CSS-logo.png"></div>
+    </div> -->
   </section>
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Bootstrap JS -->
+  <section class="content">
+
+  </section>
+
+  <div id="myModal" class="modal">
+    <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+    <img class="modal-content" id="img01">
+  </div>
+
   <script src="assets/js/jquery-3.3.1.min.js"></script>
   <script src="assets/js/bootstrap.js"></script>
   <script src="assets/js/app.js"></script>
