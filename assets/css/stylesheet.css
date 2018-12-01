@@ -98,11 +98,6 @@ div+img.myImg.img-fluid {
     vertical-align: middle;
 }
 
-/* .contact-details{
-    font-size: 0.8rem;
-} */
-
-
 /* Style the Image Used to Trigger the Modal */
 #myImg {
     border-radius: 5px;
@@ -213,10 +208,14 @@ div+img.myImg.img-fluid {
     p.h5 {
         font-size: 0.8rem;
     }
+
+    #cv {
+        margin: auto;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
+@media only screen and (min-width: 576px) {
     #hi {
         text-align: left;
         font-size: 5rem;
@@ -239,11 +238,10 @@ div+img.myImg.img-fluid {
     p.h5 {
         font-size: 1rem;
     }
-
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
     #hi {
         text-align: right;
         font-size: 7rem;
@@ -271,10 +269,14 @@ div+img.myImg.img-fluid {
         height: 40px;
     }
 
+    #cv {
+        margin: 0;
+    }
+
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
+@media only screen and (min-width: 992px) {
     .video {
         height: 350px;
     }
@@ -290,7 +292,7 @@ div+img.myImg.img-fluid {
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
     #hi {
         text-align: right;
         font-size: 12rem;

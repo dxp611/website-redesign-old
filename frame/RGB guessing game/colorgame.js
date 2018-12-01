@@ -4,7 +4,7 @@ var pickedColor;
 var squares = document.querySelectorAll(".square");
 var colorDisplay = document.getElementById("colorDisplay");
 var messageDisplay = document.querySelector("#message");
-var h1 = document.querySelector("h1");
+var h2 = document.querySelector("h2");
 var resetButton = document.getElementById("reset");
 var modeButtons = document.querySelectorAll(".mode");
 
@@ -40,11 +40,11 @@ function setupSquares() {
                 messageDisplay.textContent = "Correct!";
                 changeColors(clickedColor);
                 this.style.backgroundColor = pickedColor;
-                h1.style.backgroundColor = pickedColor;
+                h2.style.backgroundColor = pickedColor;
                 resetButton.textContent = "Play Again!";
             } else {
                 this.style.backgroundColor = "rgb(46, 46, 46)";
-                messageDisplay.textContent = "Try Again";
+                messageDisplay.textContent = "Try Again!";
             }
         });
     }
@@ -94,7 +94,7 @@ function reset() {
         }
 
     }
-    h1.style.backgroundColor = "steelblue";
+    h2.style.backgroundColor = "steelblue";
 }
 
 // easyButton.addEventListener("click", function () {
