@@ -26,7 +26,7 @@ $(document).ready(function () {
     window.onscroll = function () {
 
         //Determine the amount to rotate by
-        var deg = -window.scrollY * (360 / bodyHeight)/300;
+        var deg = -window.scrollY * (360 / bodyHeight)/2500;
 
         $("#logo").css({
             "transform": "rotate(" + deg + "deg)",
