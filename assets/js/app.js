@@ -16,21 +16,34 @@ $('.myImg').click(function () {
 });
 
 //Close Button
-$(".close").click(function() {
+$(".close").click(function () {
     modal.style.display = "none";
 });
 
 //Logo rotation
-$(document).ready(function () {
+// $(document).onload(function () {
+//     var bodyHeight = $("body").height() - $(window).height();
+//     window.onscroll = function () {
+
+//         //Determine the amount to rotate by
+//         var deg = -window.scrollY * (360 / bodyHeight)/2500;
+
+//         $("#logo").css({
+//             "transform": "rotate(" + deg + "deg)",
+//         });
+
+//     };
+// });
+
+window.onload = function () {
     var bodyHeight = $("body").height() - $(window).height();
     window.onscroll = function () {
-
-        //Determine the amount to rotate by
-        var deg = -window.scrollY * (360 / bodyHeight)/2500;
-
+        console.log($("#logo").css({
+            "transform": "rotate(" + deg + "deg)",
+        }));
+        var deg = -window.scrollY * (360 / bodyHeight);
         $("#logo").css({
             "transform": "rotate(" + deg + "deg)",
         });
-
     };
-});
+};
