@@ -38,9 +38,9 @@ $(".close").click(function () {
 window.onload = function () {
     var bodyHeight = $("body").height() - $(window).height();
     window.onscroll = function () {
-        console.log($("#logo").css({
+        $("#logo").css({
             "transform": "rotate(" + deg + "deg)",
-        }));
+        })
         var deg = -window.scrollY * (360 / bodyHeight);
         $("#logo").css({
             "transform": "rotate(" + deg + "deg)",
